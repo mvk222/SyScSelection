@@ -1,5 +1,6 @@
 # SyScSelection
-"Quasi-Monte-Carlo algorithm for systematic generation of shock scenarios from an arbitrary multivariate elliptical distribution. The algorithm selects a systematic mesh of arbitrary fineness that approximately evenly covers an isoprobability ellipsoid in d dimensions." - (Flood, Mark D. &amp; Korenko, George G. "Systematic Scenario Selection", Office of Financial Research Working Paper #0005, 2013)
+"Quasi-Monte-Carlo algorithm for systematic generation of shock scenarios from an arbitrary multivariate elliptical distribution. The algorithm selects a systematic mesh of arbitrary fineness that approximately evenly covers an isoprobability ellipsoid in d dimensions."<br />
+(Flood, Mark D. &amp; Korenko, George G. "Systematic Scenario Selection", Office of Financial Research Working Paper #0005, 2013)
 
 This package is the R analogy to the Matlab Code published by Flood &amp; Korenko in above-mentioned paper.
 
