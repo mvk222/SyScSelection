@@ -19,7 +19,7 @@ calpha <- sizeparam_normal_distn(.95, d)
 - Create a hyperellipsoid object. Note that the constructor takes the **inverse of the disperion matrix**:<br />
 hellip <- hyperellipsoid(mu, solve(sig), calpha)
 - Scenarios are calculated as a mesh of fineness 3. The number of scenarios is a function of the dimensionality of the hyperellipsoid and the fineness of the mesh:<br />
-scenarios = hypercube_mesh(3, hellip)
+scenarios <- hypercube_mesh(3, hellip)
 
 ### Example ellipsodial mesh for a t distribution:
 - Estimate the mean, covariance, and degrees of freedom from the data (mu, sig, nu)<br />
@@ -30,4 +30,4 @@ calpha <- sizeparam_t_distn(.95, d, nu)
 - Create a hyperellipsoid object. Note that the constructor takes the **inverse of the disperion matrix**:<br />
 hellip <- hyperellipsoid(mu, solve(sig), calpha)
 - Scenarios are calculated as a mesh of fineness 3. The number of scenarios is a function of the dimensionality of the hyperellipsoid and the fineness of the mesh:<br />
-scenarios = hypercube_mesh(3, hellip)
+scenarios <- hypercube_mesh(3, hellip)
