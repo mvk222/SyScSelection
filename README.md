@@ -1,2 +1,33 @@
 # SyScSelection
-Quasi-Monte-Carlo algorithm for systematic generation of shock scenarios from an arbitrary multivariate elliptical distribution. The algorithm selects a systematic mesh of arbitrary fineness that approximately evenly covers an isoprobability ellipsoid in d dimensions." - (Flood, Mark D. &amp;amp; Korenko, George G. "Systematic Scenario Selection", Office of Financial Research Working Paper #0005, 2013)  This package is analogous to the Matlab Code published by Flood &amp;amp; Korenko in above-mentioned paper.
+"Quasi-Monte-Carlo algorithm for systematic generation of shock scenarios from an arbitrary multivariate elliptical distribution. The algorithm selects a systematic mesh of arbitrary fineness that approximately evenly covers an isoprobability ellipsoid in d dimensions." - (Flood, Mark D. &amp; Korenko, George G. "Systematic Scenario Selection", Office of Financial Research Working Paper #0005, 2013)
+
+This package is the R analogy to the Matlab Code published by Flood &amp; Korenko in above-mentioned paper.
+
+## Installation:
+install.packages("devtools")<br />
+library(devtools)<br />
+install_github("meko222/SyScSelection")<br />
+library(SyScSelection)
+
+## Usage:
+### Example ellipsodial mesh for a normal distribution:
+- Estimate the mean and covariance matrix from the data (mu, sig)<br />
+- The number of dimensions, d, is taken directly from the data:<br />
+d <- length(data[1,])
+- Get the size parameter for a normal dist’n at a 95% threshold:<br />
+calpha <- sizeparam_normal_distn(.95, d)
+- Create a hyperellipsoid object. Note that the constructor takes the **inverse of the disperion matrix**:<br />
+hellip <- hyperellipsoid(mu, solve(sig), calpha)
+- Scenarios are calculated as a mesh of fineness 3. The number of scenarios is a function of the dimensionality of the hyperellipsoid and the fineness of the mesh:<br />
+scenarios = hypercube_mesh(3, hellip)
+
+### Example ellipsodial mesh for a t distribution:
+- Estimate the mean, covariance, and degrees of freedom from the data (mu, sig, nu)<br />
+- The number of dimensions, d, is taken directly from the data:<br />
+d <- length(data[1,])
+- Get the size parameter for a normal dist’n at a 95% threshold:<br />
+calpha <- sizeparam_t_distn(.95, d, nu)
+- Create a hyperellipsoid object. Note that the constructor takes the **inverse of the disperion matrix**:<br />
+hellip <- hyperellipsoid(mu, solve(sig), calpha)
+- Scenarios are calculated as a mesh of fineness 3. The number of scenarios is a function of the dimensionality of the hyperellipsoid and the fineness of the mesh:<br />
+scenarios = hypercube_mesh(3, hellip)
