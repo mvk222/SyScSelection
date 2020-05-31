@@ -6,7 +6,7 @@ This package is the R analogy to the Matlab Code published by Flood &amp; Korenk
 ## Installation:
 install.packages("devtools")<br />
 library(devtools)<br />
-install_github("meko222/SyScSelection")<br />
+install_github("mvk222/SyScSelection")<br />
 library(SyScSelection)
 
 ## Usage:
