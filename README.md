@@ -5,10 +5,12 @@
 This package is the R analogy to the Matlab Code published by Flood &amp; Korenko in above-mentioned paper.
 
 ## Installation:
+```
 install.packages("devtools")<br />
 library(devtools)<br />
 install_github("mvk222/SyScSelection")<br />
 library(SyScSelection)
+```
 
 ## Usage:
 ### Example ellipsodial mesh for a normal distribution:
