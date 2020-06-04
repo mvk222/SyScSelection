@@ -5,7 +5,7 @@ Version: 1.0.0
 Author: Merlin Kopfmann
 Maintainer: Merlin Kopfmann <mghncd+cran@posteo.jp>
 Description: Quasi-Monte-Carlo algorithm for systematic generation of shock scenarios from an arbitrary multivariate elliptical distribution. The algorithm selects a systematic mesh of arbitrary fineness that approximately evenly covers an isoprobability ellipsoid in d dimensions. (Flood, Mark D. & Korenko, George G. "Systematic Scenario Selection", Office of Financial Research Working Paper #0005, 2013)
-  This package is the R analogy to the Matlab Code published by Flood & Korenko in above-mentioned paper.
+  This package is the 'R' analogy to the 'Matlab' code published by Flood & Korenko in above-mentioned paper.
 License: CC0
 Encoding: UTF-8
 LazyData: true
