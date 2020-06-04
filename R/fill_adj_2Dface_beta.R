@@ -6,7 +6,6 @@
 #' @param z_phi ...
 #' @return beta
 #' @import pracma
-#' @export
 
 fill_adj_2Dface_beta <- function(p, phi, z_one, z_phi){
   n_one <- norm(z_one,type="2")

@@ -2,7 +2,6 @@
 #' @param hellip The shape to be rotated, must be centered at the origin
 #' @return A list of: hellip2 - A new hyperellipsoid, rotated to the coordinate axes and tfm - the transformation matrix that creates the rotation
 #' @import pracma
-#' @export
 
 rotate_to_coordaxes <- function(hellip){
   V <- vertices(hellip)

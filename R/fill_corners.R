@@ -5,7 +5,6 @@
 #' @param shk_curs Index in cmesh of the shock currently being filled
 #' @param dim_curs Index in the current shock of the dimension being filled
 #' @return A list of:  cmesh - d x 2^d array of corner points being filled, shk_curs - last point in cmesh that was filled
-#' @export
 
 fill_corners <- function(cmesh, shock, shk_curs, dim_curs){
   d <- length(shock)

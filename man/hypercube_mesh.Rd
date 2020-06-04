@@ -4,12 +4,14 @@
 \alias{hypercube_mesh}
 \title{Generates a Cartesian mesh of d-dimensional scenarios based on the given ellipsoid. This function does not assume that the ellipsoid is centered at the origin.}
 \usage{
-hypercube_mesh(phi, hellip)
+hypercube_mesh(phi, hellip, normalize)
 }
 \arguments{
 \item{phi}{The scalar fineness of the mesh}
 
 \item{hellip}{The basis for the shocks; it must have measurable width in every dimension}
+
+\item{normalize}{Whether to normalize points from the cube onto the sphere or not (TRUE/FALSE)}
 }
 \value{
 A d x N array, with each column a scenario

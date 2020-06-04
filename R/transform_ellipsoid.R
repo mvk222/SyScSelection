@@ -3,7 +3,6 @@
 #' @param hellip The original shape to be transformed
 #' @param tfm A d x d linear transformation matrix
 #' @return A transformed ellipsoid, centered at the origin
-#' @export
 
 transform_ellipsoid <- function(hellip,tfm){
   V <- vertices(hellip)

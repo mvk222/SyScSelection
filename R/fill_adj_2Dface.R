@@ -4,7 +4,6 @@
 #' @param phi Fineness of the mesh along each dimension of the 2D face
 #' @return A phi x phi x d array of points.  The points (each facemesh2D(i,j,:)) are identically equal to one in the first d-2 dimensions, so that the mesh varies only in the final two dimensions.
 #' @import pracma
-#' @export
 
 fill_adj_2Dface <- function(d,phi){
   facemesh2D <- array(0, dim=c(phi, phi, d))

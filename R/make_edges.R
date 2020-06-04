@@ -5,7 +5,6 @@
 #' @param normalize Whether to scale the corner points onto the sphere or not
 #' @return A d x d*2^(d-1)*(phi-2) array of edge points
 #' @import pracma
-#' @export
 
 make_edges <- function(d,phi,normalize){
   face_template <-  fill_adj_2Dface(d, phi)

@@ -18,7 +18,7 @@ get <- function(hellip,propName){
     val <- hellip$size
   }
   if (propName != "center" & propName != "shape" & propName != "size"){
-    stop("No valid hyperellipsoid property")
+    stop("No valid hyperellipsoid property.")
   }
   return(val)
 }

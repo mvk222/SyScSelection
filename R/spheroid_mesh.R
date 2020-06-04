@@ -4,7 +4,6 @@
 #' @param phi The scalar fineness of the mesh
 #' @param normalize Whether to normalize points from the cube onto the sphere or not (TRUE/FALSE)
 #' @return A d x N array with each column a scenario
-#' @export
 
 spheroid_mesh <- function(d,phi,normalize){
   # Memorize the raw 2D grid of points

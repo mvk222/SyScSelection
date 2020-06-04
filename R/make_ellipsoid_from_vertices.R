@@ -24,8 +24,7 @@ make_ellipsoid_from_vertices <- function(V,c){
       Vj <- V[,j]
       cosine <- mrdivide((t(Vi)%*%Vj),(norm(Vi,type="2")%*%norm(Vj,type="2")))
       if (abs(cosine)> 0.000001){
-        message(paste("Vertices not orthogonal", i, j, sep = " "))
-        stop()
+        stop(paste("Vertices not orthogonal", i, j, sep = " "))
       }
     }
   }

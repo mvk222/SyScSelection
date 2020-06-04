@@ -2,7 +2,6 @@
 #'
 #' @param hellip The original object, to be shifted
 #' @return list of two: hellip2 - the re-centered hyperellipsoid and mu - the amount of the translation
-#' @export
 
 center_at_origin <- function(hellip){
   mu <- get(hellip,"center")
