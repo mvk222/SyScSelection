@@ -15,17 +15,19 @@ make_ellipsoid_from_vertices <- function(V,c){
     # The length of each vertex vector:
     L[i,i] <-  norm(V[,i],type="2")
     # Set of orthonormal eigenvectors:
-    S[,i] = mrdivide(V[,i],L[i,i])
+    S[,i] = V[,i]/L[i,i]
     # Lambda is the matrix of eigenvalues (note the scaling by c):
     lambda[i,i] = mrdivide(c,(L[i,i]%*%L[i,i]))
     # Test that the vectors are all orthogonal:
-    for (j in (i+1):d){
+    j = i+1
+    while (j <= d){
       Vi <- V[,i]
       Vj <- V[,j]
       cosine <- mrdivide((t(Vi)%*%Vj),(norm(Vi,type="2")%*%norm(Vj,type="2")))
       if (abs(cosine)> 0.000001){
         stop(paste("Vertices not orthogonal", i, j, sep = " "))
       }
+      j <- j + 1
     }
   }
   hellip <- hyperellipsoid(matrix(0,d, 1), S%*%lambda%*%t(S), c)
