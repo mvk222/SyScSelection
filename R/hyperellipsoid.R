@@ -6,7 +6,7 @@
 #' @export
 
 hyperellipsoid <- function(...){
-  varargin <- list(as.matrix(...))
+  varargin <- list(...)
   nargin <- length(varargin)
   if (nargin == 0){
     # if no input arguments, create a 3-D sphere
