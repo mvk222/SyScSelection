@@ -7,8 +7,10 @@
 
 make_corners <- function(d,normalize){
   corn_mesh <-  fill_corners(matrix(1,d,2^d)*111, matrix(0,d,1), 0, 1)[[1]]
+  if (normalize) {
   # Scale every point to unit length:
-  scal <-  norm(corn_mesh[, 1],type="2")
+  scal <-  norm(corn_mesh[,1],type="2")
   corn_mesh <-  corn_mesh/scal
+  }
   return(corn_mesh)
 }
