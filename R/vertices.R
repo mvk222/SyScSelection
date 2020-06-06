@@ -29,7 +29,7 @@ vertices <- function(hellip){
   # Calculating vertex lengths
   L <- matrix(0,d,d)
   for (i in 1:d){
-    L[i,i] <- sqrt(mrdivide(size,lambda[i,i]))
+    L[i,i] <- sqrt(mrdivide(size,lambda[i]))
   }
   V <- S%*%L
   # Here, we add back in the mean:
