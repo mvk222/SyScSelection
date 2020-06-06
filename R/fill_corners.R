@@ -7,8 +7,8 @@
 #' @return A list of:  cmesh - d x 2^d array of corner points being filled, shk_curs - last point in cmesh that was filled
 
 fill_corners <- function(cmesh, shock, shk_curs, dim_curs){
-  d <- length(shock)
-  for (i in seq(from=1,to=-2,by=-1)){
+  d <- max(dim(shock))
+  for (i in c(1,-1)){
     shock[dim_curs] <-  i
     if (dim_curs < d){
       # Recurse through all d dimensions:

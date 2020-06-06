@@ -14,10 +14,10 @@ spheroid_mesh <- function(d,phi,normalize){
   corn_pts <- listmeshsize[[2]]
   edge_pts <- listmeshsize[[3]]
   face_pts <- listmeshsize[[4]]
-  print(paste("d =",d,",phi =",phi,",mesh_size =",mesh_size, ",corn_pts =",corn_pts,",face_pts =", face_pts,sep = " "))
+  #print(paste("d =",d,",phi =",phi,",mesh_size =",mesh_size, ",corn_pts =",corn_pts,",face_pts =", face_pts,sep = " "))
   # The basic Cartesian mesh:
   # Start with a mesh filled with 999s.  Why 999s?  Because 999s will stand out from true mesh points, which are within the unit hypercube.
-  mesh <- matrix(1,d,mesh_size)%*%999
+  mesh <- matrix(1,d,mesh_size)*999
   # Insert the corner points for the first corn_pts columns:
   corn_mesh <- make_corners(d, normalize)
   mesh[,1:corn_pts] <- corn_mesh
