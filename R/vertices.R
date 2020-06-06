@@ -9,7 +9,7 @@ vertices <- function(hellip){
   # First, we de-mean the ellipsoid, to simplify things
   centerlist <- center_at_origin(hellip)
   hellip1 <- centerlist[[1]]
-  mu <- centerlist[[2]]
+  mu <- as.matrix(centerlist[[2]])
   sig <- get(hellip1, 'shape')
   size <- get(hellip1, 'size')
   S <- eigen(sig)$vectors

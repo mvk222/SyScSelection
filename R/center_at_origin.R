@@ -4,9 +4,9 @@
 #' @return list of two: hellip2 - the re-centered hyperellipsoid and mu - the amount of the translation
 
 center_at_origin <- function(hellip){
-  mu <- as.matrix(get(hellip,"center"))
+  mu <- get(hellip,"center")
   sig <- get(hellip,"shape")
-  c <- as.matrix(get(hellip,"size"))
+  c <- get(hellip,"size")
   hellip2 <- hyperellipsoid(matrix(0, length(mu), 1), sig, c)
   return(list(hellip2,mu))
 }
