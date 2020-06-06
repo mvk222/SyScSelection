@@ -14,7 +14,7 @@ vertices <- function(hellip){
   size <- get(hellip1, 'size')
   S <- eigen(sig)$vectors
   lambda <- eigen(sig)$values
-  d <- length(mu)
+  d <- max(dim(mu))
   # Algorithmically choose a specific orientation for the eigenvectors,
   # i.e., for the columns of S.  For each column of S (i.e., for each
   # eigenvector), invert the vector if the sum of its components is

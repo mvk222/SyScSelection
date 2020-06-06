@@ -5,7 +5,7 @@
 
 rotate_to_coordaxes <- function(hellip){
   V <- vertices(hellip)
-  d <- length(V)
+  d <- max(dim(V))
   V2 <- matrix(0,d,d)
   for (i in 1:d){
     V2[i,i] <- norm(V[,i],type=2)

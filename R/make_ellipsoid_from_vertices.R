@@ -7,7 +7,7 @@
 #' @export
 
 make_ellipsoid_from_vertices <- function(V,c){
-  d <- length(V)
+  d <- max(dim((V)))
   L <- matrix(0,d,d)
   S <- matrix(0,d,d)
   lambda <- matrix(0,d,d)
