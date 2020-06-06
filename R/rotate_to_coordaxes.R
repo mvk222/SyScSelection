@@ -8,7 +8,7 @@ rotate_to_coordaxes <- function(hellip){
   d <- max(dim(V))
   V2 <- matrix(0,d,d)
   for (i in 1:d){
-    V2[i,i] <- norm(V[,i],type=2)
+    V2[i,i] <- norm(V[,i],type="2")
   }
   tfm <- mrdivide(V2,V)
   hellip2 <- transform_ellipsoid(hellip, tfm)
