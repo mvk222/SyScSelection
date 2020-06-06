@@ -13,11 +13,11 @@ fill_adj_2Dface_beta <- function(p, phi, z_one, z_phi){
   zTone <- z_one%*%t(z_one)
   zTphi <- z_phi%*%t(z_phi)
   zToxp <- z_one%*%t(z_phi)
-  theta <- acos(mrdivide(mrdivide(zToxp,(n_one%*%n_phi)),(phi-1)))
-  g_one <- n_one%*%cos((p-1)%*%theta)
-  g_phi <- n_phi%*%cos((phi-p)%*%theta)
-  beta <- zTphi%*%g_one-zToxp%*%g_phi
-  beta <- mrdivide(beta,((zTphi-zToxp)%*%g_one+(zTone-zToxp)%*%g_phi))
+  theta <- acos(zToxp/(n_one*n_phi))/(phi-1)
+  g_one <- n_one*cos((p-1)*theta)
+  g_phi <- n_phi*cos((phi-p)*theta)
+  beta <- zTphi*g_one-zToxp*g_phi
+  beta <- mrdivide(beta,((zTphi-zToxp)*g_one+(zTone-zToxp)*g_phi))
   if (abs(beta < 0.00000000000001)){
     beta <- 0
   }
