@@ -28,7 +28,7 @@ hyperellipsoid <- function(...){
     # check if input dimensions are correct
     d <- dim(as.array(varargin[[1]]))[1]
     Ccent <- dim(as.array(varargin[[1]]))[2]
-    if (Ccent != 1){
+    if (!is.na(Ccent)){
       #message("hellip$center:")
       #print(varargin[[1]])
       stop("Wrong number of colums in center vector")
