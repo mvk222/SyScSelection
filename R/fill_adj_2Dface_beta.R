@@ -18,6 +18,7 @@ fill_adj_2Dface_beta <- function(p, phi, z_one, z_phi){
   g_phi <- n_phi*cos((phi-p)*theta)
   beta <- zTphi*g_one-zToxp*g_phi
   beta <- mrdivide(beta,((zTphi-zToxp)*g_one+(zTone-zToxp)*g_phi))
+  beta <- mean(beta)
   if (abs(beta < 0.00000000000001)){
     beta <- 0
   }
