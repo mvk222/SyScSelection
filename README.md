@@ -34,7 +34,7 @@ library(SyScSelection)
 - Estimate the mean, covariance, and degrees of freedom from the data:<br />
 ```mu <- colMeans(data)```<br />
 ```sig <- cov(data)```<br />
-```nu <- dim(data)[1]```
+```nu <- dim(data)[1] - 1```
 
 - The number of dimensions, d, is taken directly from the data:<br />
 ```d <- length(data[1,])```
