@@ -14,8 +14,8 @@ library(SyScSelection)
 
 ## Usage:
 ### Example ellipsodial mesh for a normal distribution:
-- Estimate the mean and covariance matrix from the data
-```mu <- colMeans(data)```
+- Estimate the mean and covariance matrix from the data:<br />
+```mu <- colMeans(data)```<br />
 ```sig <- cov(data)```
 
 - The number of dimensions, d, is taken directly from the data:<br />
@@ -31,9 +31,9 @@ library(SyScSelection)
 ```scenarios <- hypercube_mesh(3, hellip)```
 
 ### Example ellipsodial mesh for a t distribution:
-- Estimate the mean, covariance, and degrees of freedom from the data
-```mu <- colMeans(data)```
-```sig <- cov(data)```
+- Estimate the mean, covariance, and degrees of freedom from the data:<br />
+```mu <- colMeans(data)```<br />
+```sig <- cov(data)```<br />
 ```nu <- dim(data)[1]```
 
 - The number of dimensions, d, is taken directly from the data:<br />
