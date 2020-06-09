@@ -7,5 +7,5 @@
 #' @export
 
 sizeparam_t_distn <- function(prob,d,nu){
-  return(d*qf(prob,d))
+  return(d*qf(prob,d,nu))
 }
