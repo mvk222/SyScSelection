@@ -4,6 +4,7 @@
 #' @param d Number of dimensions in the multivariate distribution
 #' @return The appropriate (scalar) size parameter
 #' @import stats
+#' @examples sizeparam_normal_distn(0.95, 6)
 #' @export
 
 sizeparam_normal_distn <- function(prob,d){

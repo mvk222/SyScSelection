@@ -17,3 +17,6 @@ A new ellipsoid, centered at the origin, with the given vertices
 \description{
 Constructs a new d-dimensional ellipsoid with the given "positive vertices", and size parameter, c.  The constructed ellipsoid is centered at the origin.Note that the input vertices (i.e., the columns of V) must therefore be orthogonal vectors, themselves centered at the origin.The size parameter, c, may be needed because the points alone only determine the eigenvalues up to a positive constant. For vertices which fall on the constructed ellipsoid, choose as the size parameterc = 1.The new ellipsoid is centered at the origin.
 }
+\examples{
+make_ellipsoid_from_vertices(V,c)
+}

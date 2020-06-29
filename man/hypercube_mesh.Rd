@@ -19,3 +19,6 @@ A d x N array, with each column a scenario
 \description{
 Generates a Cartesian mesh of d-dimensional scenarios based on the given ellipsoid. This function does not assume that the ellipsoid is centered at the origin.
 }
+\examples{
+hypercube_mesh(3,hellip,TRUE)
+}

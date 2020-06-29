@@ -2,6 +2,7 @@
 #'
 #' @param hellip A valid hyperellipsoid object
 #' @return The number of fields in the object (should be 3)
+#' @examples fieldcount(hellip)
 #' @export
 
 fieldcount <- function(hellip){

@@ -5,6 +5,7 @@
 #' @param hellip A valid hyperellipsoid object
 #' @param propName A string of the desired property
 #' @return The value of the indicated property
+#' @examples get(hellip,"center")
 #' @export
 
 get <- function(hellip,propName){

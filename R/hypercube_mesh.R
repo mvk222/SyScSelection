@@ -5,6 +5,7 @@
 #' @param normalize Whether to normalize points from the cube onto the sphere or not (TRUE/FALSE)
 #' @return A d x N array, with each column a scenario
 #' @import pracma
+#' @examples hypercube_mesh(3,hellip,TRUE)
 #' @export
 
 hypercube_mesh <- function(phi,hellip, normalize){

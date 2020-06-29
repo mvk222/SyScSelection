@@ -17,3 +17,6 @@ A new hyperellipsoid object
 \description{
 Hyperellipsoid class constructor
 }
+\examples{
+hyperellipsoid()
+}

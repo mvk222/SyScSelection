@@ -2,6 +2,7 @@
 #'
 #' @param hellip A valid hyperellipsoid object
 #' @return none
+#' @examples display(hellip)
 #' @export
 
 display <- function(hellip){

@@ -15,3 +15,6 @@ The number of fields in the object (should be 3)
 \description{
 Utility function for number of fields in a hyperellipsoid
 }
+\examples{
+fieldcount(hellip)
+}

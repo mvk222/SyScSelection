@@ -4,6 +4,7 @@
 #' @param b Base for integer expansions used in the sequence
 #' @return k-dimensional array containing the sequence
 #' @import pracma
+#' @examples vandercorput(k,b)
 #' @export
 
 vandercorput <- function(k,b){

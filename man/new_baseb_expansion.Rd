@@ -17,3 +17,6 @@ The expansion of the integer k
 \description{
 Creates a new base-b sequence of a designated length
 }
+\examples{
+new_baseb_expansion(k,b)
+}

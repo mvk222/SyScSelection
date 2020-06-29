@@ -15,3 +15,6 @@ none
 \description{
 Show basic facts of a hyperellipsoid (center, shape, size)
 }
+\examples{
+display(hellip)
+}

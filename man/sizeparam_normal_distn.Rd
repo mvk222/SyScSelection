@@ -17,3 +17,6 @@ The appropriate (scalar) size parameter
 \description{
 Calculates the size paramater for a d-dimensional hyperellipsoid conforming to a normal (i.e., Gaussian) distribution.
 }
+\examples{
+sizeparam_normal_distn(0.95, 6)
+}

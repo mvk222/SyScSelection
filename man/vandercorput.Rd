@@ -17,3 +17,6 @@ k-dimensional array containing the sequence
 \description{
 Generates a base-b Van der Corput sequence with k elements
 }
+\examples{
+vandercorput(k,b)
+}

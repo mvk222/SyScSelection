@@ -4,6 +4,7 @@
 #' @param b Base for integer expansions used in the sequence
 #' @return The expansion of the integer k
 #' @import pracma
+#' @examples new_baseb_expansion(k,b)
 #' @export
 
 new_baseb_expansion <- function(k, b) {

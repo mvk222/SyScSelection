@@ -4,6 +4,7 @@
 #' @param nu Degrees of freedom parameter for the t distribution
 #' @return The appropriate (scalar) size parameter
 #' @import stats
+#' @examples sizeparam_t_distn(0.95, 6, 5)
 #' @export
 
 sizeparam_t_distn <- function(prob,d,nu){

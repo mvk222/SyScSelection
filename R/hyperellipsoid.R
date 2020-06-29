@@ -3,6 +3,7 @@
 #' sig - The matrix determining the shape; for elliptical probability distributions, sig will be the inverse dispersion matrix,
 #' c - The scalar determining the size
 #' @return A new hyperellipsoid object
+#' @examples hyperellipsoid()
 #' @export
 
 hyperellipsoid <- function(...){

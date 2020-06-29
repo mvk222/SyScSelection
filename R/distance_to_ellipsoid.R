@@ -2,6 +2,7 @@
 #' @param hellip The shape to which distance is measured
 #' @param point Where distance is measured from
 #' @return The Euclidean distance between the point and the corresponding spot on the surface of hellip
+#' @expamples distance_to_ellipsoid(hellip,point)
 #' @export
 
 distance_to_ellipsoid <- function(hellip,point){

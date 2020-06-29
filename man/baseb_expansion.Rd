@@ -17,3 +17,6 @@ An expanded base-b expansion
 \description{
 Adds the next base-b element to an existing base-b sequence
 }
+\examples{
+baseb_expansion(ain,b)
+}

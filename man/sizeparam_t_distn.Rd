@@ -19,3 +19,6 @@ The appropriate (scalar) size parameter
 \description{
 Calculates the size paramater for a d-dimensional hyperellipsoid conforming to a Student's t distribution.
 }
+\examples{
+sizeparam_t_distn(0.95, 6, 5)
+}
