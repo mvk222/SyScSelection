@@ -3,7 +3,9 @@
 #' @param hellip the basis for the shocks; it must have measurable width in every dimension
 #' @return A d x 2d array, [dx2d], with each column a shock; the first d columns are positive univariate shocks, and final d columns are matching negative univariate shocks
 #' @import pracma
-#' @examples univariate_shocks(hellip)
+#' @examples 
+#' hellip <- hyperellipsoid()
+#' univariate_shocks(hellip)
 #' @export
 
 univariate_shocks <- function(hellip) {

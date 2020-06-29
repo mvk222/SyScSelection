@@ -4,7 +4,11 @@
 #' @param c The size parameter of the new ellipsoid
 #' @return A new ellipsoid, centered at the origin, with the given vertices
 #' @import pracma
-#' @examples make_ellipsoid_from_vertices(V,c)
+#' @examples 
+#' hellip <- hyperellipsoid()
+#' V <- vertices(hellip)
+#' c <- 4
+#' make_ellipsoid_from_vertices(V,c)
 #' @export
 
 make_ellipsoid_from_vertices <- function(V,c){

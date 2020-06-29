@@ -21,6 +21,3 @@ Get hyperellipsoid property from the specified object and return the value.
 Property names are:
 center, shape, and size
 }
-\examples{
-get(hellip,"center")
-}

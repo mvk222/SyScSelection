@@ -16,5 +16,6 @@ A d x 2d array, [dx2d], with each column a shock; the first d columns are positi
 Calculates 2d d-dimensional univariate shocks (up and down in each of the d dimensions) based on the given  ellipsoid. Univariate shocks are points on the surface of the ellipsoid that differ from the center of the  ellipsoid in only one dimension. Thus, for an ellipsoid centered at the origin, only one element of a d-dimensional shock will be non-zero.This function does not assume that the ellipsoid is centered at the origin.
 }
 \examples{
+hellip <- hyperellipsoid()
 univariate_shocks(hellip)
 }

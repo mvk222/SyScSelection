@@ -20,5 +20,6 @@ A d x N array, with each column a scenario
 Generates a Cartesian mesh of d-dimensional scenarios based on the given ellipsoid. This function does not assume that the ellipsoid is centered at the origin.
 }
 \examples{
+hellip <- hyperellipsoid()
 hypercube_mesh(3,hellip,TRUE)
 }

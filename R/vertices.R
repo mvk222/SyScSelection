@@ -3,7 +3,9 @@
 #' @param hellip defines the polar vertices
 #' @return A d x d array with each column a positive vertex
 #' @import pracma
-#' @examples vertices(hellip)
+#' @examples 
+#' hellip <- hyperellipsoid()
+#' vertices(hellip)
 #' @export
 
 vertices <- function(hellip){

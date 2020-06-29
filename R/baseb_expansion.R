@@ -2,8 +2,6 @@
 #' @param ain Either a an array containing an existing base-b expansion, or a scalar integer indicating the length for a new base-b expansion
 #' @param b Base for integer expansions used in the sequence
 #' @return An expanded base-b expansion
-#' @examples baseb_expansion(ain,b)
-#' @export
 
 baseb_expansion <- function(ain, b) {
   if (length(ain) == 1) {
